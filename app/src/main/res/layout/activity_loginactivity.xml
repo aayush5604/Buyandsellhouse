@@ -5,21 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
-    tools:context=".splashscreenactivity">
-
+    tools:context=".loginactivity">
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/download"
         android:layout_gravity="center"></ImageView>
-    <TextView
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120in"
-        android:text="version2.0"
-        android:textSize="28sp"
-        android:layout_gravity="center"></TextView>
-
+        android:layout_height="30dp"
+        android:hint="enter the username"
+        android:id="@+id/etusername"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="enter password"
+        android:id="@+id/etpassword"></EditText>
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:text="login"
+        android:id="@+id/btnlogin"></Button>
 
 </LinearLayout>
